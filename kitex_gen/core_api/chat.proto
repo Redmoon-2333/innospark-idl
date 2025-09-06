@@ -1,0 +1,20 @@
+syntax = "proto3";
+package chat;
+
+option go_package = "github.com/Redmoon-2333/innospark-idl/kitex_gen/chat";
+
+// 删除无法解析的import语句
+// import "idl/common.proto";
+
+service ChatService {
+  // 最简单的 unary 接口
+  rpc Chat(ChatReq) returns (ChatResp);
+}
+
+message ChatReq {
+  string user_input = 1;
+}
+
+message ChatResp {
+  string answer = 1;
+}
