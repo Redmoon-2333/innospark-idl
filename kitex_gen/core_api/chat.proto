@@ -3,7 +3,8 @@ package chat;
 
 option go_package = "github.com/Redmoon-2333/innospark-idl/kitex_gen/chat";
 
-import "common.proto";
+// 删除无法解析的import语句
+// import "idl/common.proto";
 
 service ChatService {
   // 最简单的 unary 接口
