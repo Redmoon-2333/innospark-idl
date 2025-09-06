@@ -1,7 +1,7 @@
 syntax = "proto3";
 package chat;
 
-option go_package = "github.com/YOUR_GITHUB/innospark-idl/kitex_gen/chat";
+option go_package = "github.com/Redmoon-2333/innospark-idl/kitex_gen/chat";
 
 import "common.proto";
 
