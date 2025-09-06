@@ -1,4 +1,4 @@
-module github.com/YOUR_GITHUB/innospark-idl
+module github.com/35183/innospark-idl
 
 go 1.24
 
