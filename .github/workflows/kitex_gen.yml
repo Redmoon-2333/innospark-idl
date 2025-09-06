@@ -55,11 +55,3 @@ jobs:
           git add kitex_gen
           git commit -m "${{ github.event.head_commit.message }}"
           git push origin main
-      - uses: actions/setup-go@v5
-        with:
-          go-version: '1.22'
-
-      - name: Install kitex & protoc
-        run: |
-          go install github.com/cloudwego/kitex/tool/cmd/kitex@latest
-          sudo apt-get update && sudo apt-get install -y protobuf-compiler
